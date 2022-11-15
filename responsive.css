@@ -1,0 +1,48 @@
+@media only screen and (max-width:900px) {
+    nav ul li a {
+        padding: 0 10px;
+    }
+
+    .account {
+        margin: 0 -7px 0 -9px;
+    }
+}
+
+@media only screen and (max-width:700px) {
+    header {
+        height: 80px;
+    }
+
+    .navleft {
+        display: inline-flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: left;
+    }
+
+    .navright {
+        display: inline-flex;
+        list-style: circle;
+        padding: 10px 0;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .img {
+        display: none;
+    }
+
+    .navcenter {
+        color: darkorange;
+        font-family: Kanit, sans-serif;
+        font-size: 35px;
+        width: 300mm;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        transform: translate(0px, -50px);
+    }
+    .navleft ul {
+        display: inline-flex;
+    }
+}

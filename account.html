@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>account</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap');
+        * {
+            margin: 3mm;
+            padding: 0;
+        }
+
+        .welcome {
+            background-color: brown;
+            display: flex;
+            text-align: center;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            align-items: center;
+            justify-content: center;
+            height: 50px;
+            border-radius: 20px;
+            font-size: 36px;
+            font-family: 'Comic Neue', cursive;
+        }
+
+        .main {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .left {
+            width: 35vw;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-items: center;
+            margin: 60px 0 0 80px;
+
+        }
+
+        .right {
+            width: 35vw;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .name {
+            border: 2px solid black;
+            width: 400px;
+            color: black;
+            height: 80px;
+            justify-content: center;
+            align-items: center;
+            padding: 15px 5px 5px 5px;
+            background-color: rgba(235, 231, 226, 0.668);
+        }
+
+        .email {
+            border: 2px solid black;
+            width: 400px;
+            color: black;
+            height: 80px;
+            justify-content: center;
+            align-items: center;
+            padding: 15px 5px 5px 5px;
+            background-color: rgba(235, 231, 226, 0.668);
+        }
+
+        .date {
+            border: 2px solid black;
+            width: 400px;
+            color: black;
+            height: 80px;
+            justify-content: center;
+            align-items: center;
+            padding: 15px 5px 5px 5px;
+            background-color: rgba(235, 231, 226, 0.668);
+        }
+
+        .avatar {
+            border: 2px solid black;
+            width: 400px;
+            color: black;
+            height: 80px;
+            justify-content: center;
+            align-items: center;
+            padding: 15px 5px 5px 5px;
+            background-color: rgba(235, 231, 226, 0.668);
+        }
+
+        .end {
+            display: inline-flex;
+            align-items: center;
+
+        }
+
+        .x {
+            background-color: rgba(235, 231, 226, 0.668);
+            width: 35vw;
+            border: 2px solid black;
+            padding: 30px 6px;
+            text-align: center;
+            margin-right: 5cm;
+        }
+
+        .last {
+            padding: 3px 5px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        @media screen and (max-width:1000px) {
+            body {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                align-items: center;
+            }
+
+            .right {
+                /* width: 35vw; */
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .end {
+                transform: translate(118px, 3px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="welcome">
+        Welcome User..!
+    </nav>
+    <div class="main">
+        <div class="left">
+            <form action="" method="get" class="information">
+                <div class="name">
+                    <label for="name">Enter your name</label><br>
+                    <input type="name" name="name" id="name" width="100px" size="30" required>
+                </div>
+                <div class="email">
+                    <label for="email">Enter your email</label><br>
+                    <input type="email" name="email" id="email" size="30" required>
+                </div>
+                <div class="date">
+                    <label for="date">Enter your date of birth</label><br>
+                    <input type="date" name="date" id="date" required>
+                </div>
+                <div class="avatar">
+                    <label for="avatar">Choose a profile picture:</label><br>
+                    <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg" required>
+                </div>
+                <div class="end">
+                    <input class="last" type="reset" value="Reset">
+                    <input class="last" type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+        <div class="right">
+            <p class="x">Your Orders</p>
+            <p class="x">Your Wishlist</p>
+            <p class="x">Your Cart</p>
+            <p class="x">Help Center</p>
+        </div>
+    </div>
+</body>
+
+</html>
